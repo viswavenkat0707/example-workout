@@ -1,0 +1,30 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        {{title}}
+    </div>
+    <div class="panel-body" >
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>s.no</th>
+                    <th>title </th>
+                       <th>cast</th> 
+                       <th>relesedate</th>
+                   
+                </tr>
+            </thead>
+            <tbody>
+                <tr [ngClass]='{"bg-success":e,"bg-danger":o}'
+                 *ngFor="let movie of movies; let i=index;let o=odd;let e=even">
+                    <td>  {{i}} </td>
+                    <td>  {{movie.title}} </td>
+                    <td>{{movie.cast}} </td>
+                    <td>{{movie.relesedate}} </td>
+
+                </tr>
+            </tbody>
+            </table>
+        </div>
+    </div>
+</div>

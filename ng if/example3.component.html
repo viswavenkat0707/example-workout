@@ -1,0 +1,6 @@
+
+<div class="row">
+  <label for="">checkbox </label>  <input type="checkbox"[(ngModel)]="showme"> 
+</div>
+<p  *ngIf="showme ;">showme is checked</p>
+<p  *ngIf="!showme">showme is unchecked</p>
